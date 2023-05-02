@@ -1,0 +1,266 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+    .social_media_link li a {
+        width: 51px;
+        height: 51px;
+    }
+    .logIn_footer .footer_manu ul {
+         justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(max-width:1100px){
+    .footer_links:before, .cloud_notebook_wrap:before {
+      
+        width: 95%;
+    
+    }
+}
+
+@media(max-width:992px){
+    h1{
+        font-size: 2rem;
+    }
+    body{
+        font-size: 1rem;
+    }
+    .notebook_content article {
+        font-size: 18px;
+    }
+    ul.social_media_link {
+        justify-content: initial;
+    }
+    ul.social_media_link li {
+        margin-right: .5rem;
+    }
+    .notebook_img img{
+        position: initial;
+    }
+    .notebook_content{
+        margin-left: 0px !important;
+    }
+    ul.footer_links{
+        flex-wrap: wrap;
+
+    }
+    ul.footer_links li{
+        margin-right: 1rem;
+    }
+    .card_img img {
+        width: 100%;
+        height: auto;
+       
+    }
+    .cloud_notebook_wrap {
+        padding-top: 4rem;
+        padding-bottom: 3.4rem;
+    }
+    .heroimg {
+        margin-top: 4rem;
+    }
+    .navbar-expand-lg .navbar-nav {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .login {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .navbar-toggler-icon{
+        background-image: none;
+    }
+    button.navbar-toggler{
+        border: none;
+        outline: none;
+    }
+    button.navbar-toggler:focus{
+        box-shadow: none;
+       
+    }
+    a.navbar-brand img {
+        width: 160px;
+    }
+    .navbar .container{
+        --bs-gutter-x: 0;
+    }
+    nav.navbar.navbar-expand-lg.fixed-top {
+        background: white;
+    }
+    .sub_titles {
+     
+        flex-direction: column;
+        text-align: center;
+    }
+    .login-inputs h2 {
+        /* font-size: 1.5rem; */
+        border-bottom: 2px solid #ddd;
+    }
+    .login-inputs h3 {
+     
+margin-bottom: 1.3rem;
+     
+margin-top: 1.3rem;
+    }
+    .login-inputs {
+        padding: 2.5rem 2rem;
+        
+    }
+    .logoIn_footer_wrap.row{
+        flex-direction: column-reverse;
+    }
+    .login_footer_copyright {
+        padding: 0 2rem;
+        text-align: center;
+        border-top: 1px solid #202020dd;
+        padding-top: 1rem;
+        margin-top: 2rem;
+    }
+}
+
+
+
+
+@media(max-width:768px){
+    .notebook_img{
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+    .notebook_content{
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .notebook_img img{
+        width: initial;
+    }
+    .notebook_img {
+        padding-left: 0;
+    }
+    .cloud_notebook_wrap {
+        padding-top: 3rem;
+        padding-bottom: 2.4rem;
+    }
+    .display_card {
+        min-width: 260px;
+        margin-bottom: 1rem;
+    }
+    ul.footer_links {
+        margin-top: 3rem;
+    }
+    .subscribe_form {
+        max-width: 459px;
+    }
+    .social_media_wrap p, .subscribe_wrap p {
+        padding-bottom: 1rem;
+    }
+    .subscribe_wrap {
+        padding-bottom: 2rem;
+    }
+    .social_media_wrap p {
+        padding-bottom: 0.5rem;
+    }
+    .footer_logo img {
+        width: 190px;
+    }
+    footer.footer {
+      
+        padding-bottom: 2.1rem;
+       
+    }
+    .login_subhead_wrap {
+      
+        background-position: center;
+    }
+       .login-inputs {
+        padding: 2.5rem 1rem;
+       
+    }
+  
+    
+
+}
+@media (max-width:575px) {
+    body{
+        font-size: .9rem;
+    }
+    h1{
+        font-size: 1.5rem;
+        line-height: 32px;
+    }
+    .notebook_content article {
+        font-size: 1rem;
+    }
+    .notebook_content h1 {
+        margin-bottom: 1rem;
+    }
+    .notebook_content {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .notebook_img img {
+        width: 260px;
+    }
+    .social_media_link li a {
+        width: 43px;
+        height: 42px;
+     
+    }
+    .social_media_link {
+      
+        flex-wrap: wrap;
+    }
+    ul.social_media_link li {
+        margin-right: .5rem;
+        margin-top: .5rem;
+    }
+    .display_card {
+        min-width: 229px;
+    }
+    footer.footer {
+        padding-top: 2.375rem;
+        margin-top: 3.5rem;
+    }
+ 
+    .login-inputs h2{
+        font-size: 1.5rem;
+        
+        border-bottom: 2px solid #ddd;
+
+    }
+    .sub_titles h2 img {
+        padding: 0px;
+        margin-left: 0.2rem;
+        margin-right: 0.3rem;
+        height: 26px;
+        width: 34px;
+    }
+    h2 {
+        font-size: 22px;
+        
+    }
+    .notifications .input_group, .login-inputs form .input_group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+}
+ 
+}
