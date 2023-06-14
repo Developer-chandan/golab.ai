@@ -19,8 +19,8 @@
         <div class="header_wrap">
 
             <nav class="navbar navbar-expand-lg fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                <div class="container-lg">
+                    <a class="navbar-brand" href="index.html">
                         <img src="img/golab-h-logo.png" class="img-fluid" alt="">
 
                     </a>
@@ -38,28 +38,29 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link" href="features.html">Features</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link" href="pricing.html">Pricing</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Resources</a>
+                                <a class="nav-link" href="resource.html">Resources</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
 
 
                         </ul>
                         <div class="login">
-                            <button type="button" class="btn btn-outline-secondary button_rounded px-5">Login</button>
+                            <a href="register.html" id="registerBtn"
+                                class="btn btn-outline-secondary button_rounded px-5">Register</a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +70,7 @@
         <div class="heroimg">
             <div class="login_subheadeer">
                 <div class="login_subhead_wrap">
-                    <div class="container-fluid">
+                    <div class="container-lg">
                         <div class="sub_titles d-flex">
                             <h2>GoLab is Decentralized! <img src="img/image 5.png" class="img-fluid" alt=""></h2>
                             <p class="text-capitalize">Run jupyter notebooks, AI GPUs, Coding, Collaboration, and More!
@@ -85,106 +86,75 @@
 
 
         <section class="loginWrap">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6 logIn_img d-none d-lg-block">
-                        <div class="img_wrap d-flex justify-content-center">
-                            <img src="img/Promo (2).png" class="img-fluid" alt="">
-                            <h2 class="text-uppercase account_setup">ACCOUNT SETUP</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 login-inputs">
-                        <h2 class="text-uppercase account_setup pb-4 d-lg-none">ACCOUNT SETUP</h2>
-                        <h3 class="text-capitalize">The Basics</h3>
+            <div class="container-lg">
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-6 login-inputs bg_white" id="loginInputDiv">
+                        <!-- <h2 class="text-uppercase account_setup pb-4 d-lg-none">ACCOUNT SETUP</h2> -->
+                        <h1 class="text-uppercase text-center">User LOGIN</h1>
 
                         <form>
-                            <div class="name input_group">
+                            <div class="login_form">
                                 <div class="input_box">
-                                    <label for="exampleInputFirstName" class="form-label">First name</label>
-                                    <input type="text" class="form-control" id="exampleInputFirstName"
-                                        placeholder="John" aria-describedby="firstName">
-
-                                </div>
-                                <div class="input_box">
-                                    <label for="exampleInputLastName" class="form-label">last name</label>
-                                    <input type="text" class="form-control" id="exampleInputLastName"
-                                        placeholder="Bredson" aria-describedby="lastName">
-
-                                </div>
-                            </div>
-                            <div class="contact input_group">
-                                <div class="input_box">
-                                    <label for="exampleInputPhone" class="form-label">Phone (optional)</label>
-                                    <input type="phone" class="form-control" id="exampleInputPhone"
-                                        placeholder="838-822-2467" aria-describedby="phoneHelp">
-
-                                </div>
-                                <div class="input_box">
-                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                    <label for="loginEmailInput" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="loginEmailInput"
                                         placeholder="tromp.velda@russel.biz" aria-describedby="phoneHelp">
 
                                 </div>
-                            </div>
-                            <div class="password input_group">
+
                                 <div class="input_box">
                                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                    <input type="password" autocomplete="" class="form-control" id="exampleInputPassword1"
                                         placeholder="*********************">
                                 </div>
-                                <div class="input_box">
-                                    <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword2"
-                                        placeholder="*********************">
+                                <div class="text-end">
+                                    <a id="forgotPassword" class="d-inline-block text_blue cursour-pointer">Forgot
+                                        password? </a>
                                 </div>
+
                             </div>
+
+
 
                         </form>
 
-                        <div class="notifications">
-                            <h3 class="text-capitalize">Notifications</h3>
-                            <div class="top_swtichs input_group">
-                                <div class="input_box">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                      </label>
-                                      <span>Email Notifications</span>
-                                </div>
-                                <div class="input_box">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                      </label>
-                                      <span>SMS Notifications</span>
+                        
 
-                                </div>
-                            </div>
-                            <div class="bottom_swtichs input_group">
-                                <div class="input_box">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                      </label>
-                                      <span>Push Notifications</span>
 
-                                </div>
-                                <div class="input_box no_notify">
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                      </label>
-                                      <span>No Notifications</span>
+                        <div class="mt-4 d-flex justify-content-center">
+                            <a href="#" class="btn button_rounded text-uppercase  button_lg">Log In</a>
 
-                                </div>
 
-                            </div>
                         </div>
-                        <div class="mt-4">
-                            <a href="#"
-                                class="btn btn-primary button_rounded text-uppercase fw-bold button_lg">CONTINUE</a>
+
+                        <div class="dont_have_account">
+                            <p class="text-center">Don't have an account? <a href="register.html" id="signUp"
+                                    class=" cursour-pointer text_blue">Sign Up</a></p>
                         </div>
                     </div>
+                    <div class="col-lg-6 d-none" id="forgot_password_div">
+                        <div class="forgotPassword login-inputs">
+                            <h1 class="text-center text_gray">Password Reset</h1>
+                            <form action="">
+                                <div class="input_box">
+                                    <label for="ForgotPassEmai1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="ForgotPassEmai1"
+                                        placeholder="tromp.velda@russel.biz" aria-describedby="phoneHelp">
+    
+                                </div>
+                                
+                            <div class="mt-4 d-flex justify-content-center flex-column align-items-center">
+                                <a href="#" class="btn button_rounded text-uppercase  button_lg">Reset Password</a>
+                                <p class="py-4">
+                                   <a id="backToLogIn" class="cursour-pointer text-capitalize">Back to login</a> 
+                                </p> 
+    
+                            </div>
+    
+                            </form>
+                        </div>
+                    </div>
+                    
                 </div>
 
             </div>
@@ -201,7 +171,7 @@
     </main>
 
     <footer class="logIn_footer">
-        <div class="container-fluid">
+        <div class="container-lg">
             <div class="row logoIn_footer_wrap">
                 <div class="col-lg-3">
                     <p class="login_footer_copyright">© 2023 GoLab AI, Inc. All rights reserved. </p>
@@ -217,14 +187,14 @@
                             <li class="footer_link"><a href="">Disclaimer</a></li>
                             <li class="footer_link"><a href="">Acceptable Usage Policy</a></li>
                             <li class="footer_link"><a href="">Help</a></li>
-    
+
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer_wrap">
-             
-                
+
+
             </div>
         </div>
     </footer>
@@ -232,7 +202,28 @@
 
 
     <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
 
+const forgotPassDiv = document.getElementById('forgot_password_div');
+const forgotPassLink = document.getElementById('forgotPassword');
+const loginInputDiv = document.getElementById('loginInputDiv');
+
+          forgotPassLink.addEventListener('click', () => {
+    loginInputDiv.classList.add('d-none');
+    forgotPassDiv.classList.remove('d-none');
+    
+  })
+
+  const backToLogIn = document.getElementById('backToLogIn');
+  backToLogIn.addEventListener('click', () =>{
+    forgotPassDiv.classList.add('d-none');
+    loginInputDiv.classList.remove('d-none');
+  
+  
+  })
+
+    </script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golab.ai | Home</title>
+    <title>Pricing | Golab</title>
     <!-- bootstrap css  -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- custom css  -->
@@ -18,6 +18,7 @@
 
     <header class="header">
         <div class="header_wrap">
+
             <!-- nav start  -->
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container-lg">
@@ -66,248 +67,301 @@
 
                     </div>
                 </div>
-            </nav>  <!-- nav end  -->
-
+            </nav> <!-- nav end  -->
 
         </div>
-        <div class="heroimg">
-            <div class="container-lg">
-                <img src="img/home-hero.png" class="img-fluid" alt="">
 
-            </div>
-        </div>
     </header>
-
-    <main>
-        <!-- Cloud Notebooks & ai tools start -->
-     <section class="homepage_cloud_notebook">
-        <div class="container-lg">
-          <div class="home_cloude_main_wrap">
+    <section class="pricing">
+        <div class="container mt-5">
+            <div class="row" id="loading_modal">
+                <!-- Modal -->
+                <div class="modal fade" id="modal_popup" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                             
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <div class="spinner-grow text-primary" role="status">
+                                  </div>
+                                  <div>
+                                    <h4 class="text_orange my-3">Loading...</h4>
+                                    <p class="text_color">We are checking the setup and prepearing for your use within 2-3 minutes</p>
+                                  </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-lg-6 cloud_content">
-                    <div class="home_cloud_content_wrap">
-                        <span class="text_color subtitle">Create with golab</span>
-                        <h1>Cloud Notebooks & Ai Tools </h1>
-                        <article class="text_color page_font">Create AI media right now, with no experience required. For more experienced artists, look at using our ControlNet instances for powerful media generation.</article>
-                        <a href="pricing.html" class="text-uppercase btn button_lg">START</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="home_cloudimage_wrap">
-                        <img src="img/notebook-home.png" class="img-fluid" alt="">
-                    </div>
 
-                </div>
-            </div>
-          </div>
-
-        </div>
-
-     </section>
-        <!-- Cloud Notebooks & ai tools end -->
-        <!-- How It Works -->
-        <section class="how_it_is">
-            <div class="container-lg">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="how_it_work_title text-center">
-                            <span class=" text-center text_color subtitle">Working Process</span>
-                            <h1 class="text_gray">How It Works</h1>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="how_works_cards">
-                            <div class="work_card_img">
-                                <img src="img/home-1.png" class="img-fluid" alt="">
-                            </div>
-                            <div class="work_card_content">
-                                <p class="text_gray">Upload Your Style</p>
-                                <div class="card_icon">
-                                    <a href="">
-                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13353 8.55286H11.5589L7.0042 13.1075C6.6402 13.4715 6.6402 14.0689 7.0042 14.4329C7.3682 14.7969 7.9562 14.7969 8.3202 14.4329L14.4709 8.28219C14.8349 7.91819 14.8349 7.33019 14.4709 6.96619L8.32953 0.80619C8.15515 0.631421 7.91841 0.533203 7.67153 0.533203C7.42465 0.533203 7.1879 0.631421 7.01353 0.80619C6.64953 1.17019 6.64953 1.75819 7.01353 2.12219L11.5589 6.68619H1.13353C0.620195 6.68619 0.200195 7.10619 0.200195 7.61952C0.200195 8.13286 0.620195 8.55286 1.13353 8.55286Z" fill="#FFFFFF"/>
-                                            </svg>
-                                            
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="how_works_cards">
-                            <div class="work_card_img">
-                                <img src="img/home-3.png" class="img-fluid" alt="">
-                            </div>
-                            <div class="work_card_content">
-                                <p class="text_gray">Train Your Styte</p>
-                                <div class="card_icon">
-                                    <a href="">
-                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13353 8.55286H11.5589L7.0042 13.1075C6.6402 13.4715 6.6402 14.0689 7.0042 14.4329C7.3682 14.7969 7.9562 14.7969 8.3202 14.4329L14.4709 8.28219C14.8349 7.91819 14.8349 7.33019 14.4709 6.96619L8.32953 0.80619C8.15515 0.631421 7.91841 0.533203 7.67153 0.533203C7.42465 0.533203 7.1879 0.631421 7.01353 0.80619C6.64953 1.17019 6.64953 1.75819 7.01353 2.12219L11.5589 6.68619H1.13353C0.620195 6.68619 0.200195 7.10619 0.200195 7.61952C0.200195 8.13286 0.620195 8.55286 1.13353 8.55286Z" fill="#FFFFFF"/>
-                                            </svg>
-                                            
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <div class="col-md-4">
-                        <div class="how_works_cards">
-                            <div class="work_card_img">
-                                <img src="img/home-2.png" class="img-fluid" alt="">
-                            </div>
-                            <div class="work_card_content">
-                                <p class="text_gray">Earn Rewards</p>
-                                <div class="card_icon">
-                                    <a href="">
-                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13353 8.55286H11.5589L7.0042 13.1075C6.6402 13.4715 6.6402 14.0689 7.0042 14.4329C7.3682 14.7969 7.9562 14.7969 8.3202 14.4329L14.4709 8.28219C14.8349 7.91819 14.8349 7.33019 14.4709 6.96619L8.32953 0.80619C8.15515 0.631421 7.91841 0.533203 7.67153 0.533203C7.42465 0.533203 7.1879 0.631421 7.01353 0.80619C6.64953 1.17019 6.64953 1.75819 7.01353 2.12219L11.5589 6.68619H1.13353C0.620195 6.68619 0.200195 7.10619 0.200195 7.61952C0.200195 8.13286 0.620195 8.55286 1.13353 8.55286Z" fill="#FFFFFF"/>
-                                            </svg>
-                                            
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- How It Works end-->
- <section class="intrigate_browser_file">
-    <div class="container-lg">
-        <div class="row">
-            <div class="col-md-6 intrigate_content_wrap">
-                <div class="intrigate_browser_content">
-                    <div class="intrigate_browser_file_img">
-                        <h1 class="text_gray">Integrated File Browser
-                        </h1>
-                        <p class="header_subtitle text_color">Your files stay with you every time you boot up a session.
+             
+                <!-- card_start  -->
+                <div class="col-md-4 card-1">
+                    <div class="pricing_card">
+                        <p class="pricing_card_title">SM - Auto1111 - SD v1.5
                         </p>
-                    </div>
-                    <div class="icons_and_content">
-                        <div class="icons">
-                            <i class="fa-regular fa-images"></i>
+
+                        <h1>$0.50 / hr</h1>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">3 Second Generation  </p>
+
                         </div>
-                        <div class="contents">
-                            <h3>Your images are always available
-                            </h3>
-                            <p class="text_color">Images travel with you from session to session</p>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">1024x1024 Max Img</p>
+
                         </div>
-                    </div>
-                    <div class="icons_and_content">
-                        <div class="icons">
-                            <i class="fa-solid fa-cloud-arrow-down"></i>                        </div>
-                        <div class="contents">
-                            <h3>Download entire directories</h3>
-                            <p class="text_color">It's easy to save all your images to your computer.
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">Over 20 Models</p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">8GB VRAM
                             </p>
-                        </div>
-                    </div>
-                  
-                    <div class="icons_and_content">
-                        <div class="icons">
-                            <i class="fa-solid fa-laptop"></i>                        </div>
-                        <div class="contents">
-                            <h3>See what's generating
 
-                            </h3>
-                            <p class="text_color">Generating a batch? Hit reload to view images as they are being generated from batches.</p>
+                        </div>
+
+                        <div class="pricing_start_btn">
+                            <a href="pricing.html" id="start_btn" class="text-uppercase btn button_lg"
+                             data-bs-toggle="modal"
+                                data-bs-target="#modal_popup">START</a>
                         </div>
                     </div>
-                </div>
-               
-            </div>
-            <div class="col-md-6">
-                <div class="intrigate_img">
-                    <img src="/img/intregate_img.png" class="img-fluid" alt="">
-                </div>
+                </div> <!-- card_end  -->
+
+                <!-- card start  -->
+                <div class="col-md-4 card-2">
+                    <div class="pricing_card">
+                        <p class="pricing_card_title">MD - Auto1111 - SD v1.5 </p>
+
+                        <h1>$0.99 / hr</h1>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">2 Second Generation
+                            </p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">2048x2048 Max Img
+
+                            </p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">25% Faster than SM!
+
+                            </p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">16GB VRAM
+                            </p>
+
+                        </div>
+
+                        <div class="pricing_start_btn">
+                            <a href="pricing.html"  id="start_btn" class="text-uppercase btn button_lg"  data-bs-toggle="modal"
+                            data-bs-target="#modal_popup">START</a>
+                        </div>
+                    </div>
+                </div> <!-- card_end  -->
+
+
+                <!-- card start  -->
+                <div class="col-md-4 card-3">
+                    <div class="pricing_card">
+                        <p class="pricing_card_title">LG - Auto1111 - SD v1.5</p>
+
+                        <h1>$2.50 / hr</h1>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">1.6 Second Generation </p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">4k - 8k Upscaling</p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">20% Faster than MD
+                                ! </p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">3x VRAM - 24GB
+                            </p>
+
+                        </div>
+
+                        <div class="pricing_start_btn">
+                            <a href="pricing.html"  id="start_btn" class="text-uppercase btn button_lg"  data-bs-toggle="modal"
+                                data-bs-target="#modal_popup">START</a>
+                        </div>
+                    </div>
+                </div><!-- card_end  -->
+                <!-- card_start -->
+                <div class="col-md-4 card-4">
+                    <div class="pricing_card">
+                        <p class="pricing_card_title">SM - GolabAi </p>
+
+                        <h1>$0.55 / hr</h1>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">3 Second Generation</p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">1024x1024 Max Img  </p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">Over 25 Models
+
+
+                            </p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">8GB VRAM
+                            </p>
+
+                        </div>
+
+                        <div class="pricing_start_btn">
+                            <a href="pricing.html"  id="start_btn" class="text-uppercase btn button_lg"  data-bs-toggle="modal"
+                                data-bs-target="#modal_popup">START</a>
+                        </div>
+                    </div>
+                </div><!-- card_end  -->
+                <!-- card_start -->
+                <div class="col-md-4 card-5">
+                    <div class="pricing_card">
+                        <p class="pricing_card_title">MD - GolabAi </p>
+
+                        <h1>$0.99 / hr</h1>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">2 Second Generation
+                            </p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">2048x2048 Max Img
+
+
+
+
+                            </p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">Over 25 Models
+
+
+                            </p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">16GB VRAM
+
+                            </p>
+
+                        </div>
+
+                        <div class="pricing_start_btn">
+                            <a href="pricing.html"  id="start_btn" class="text-uppercase btn button_lg"  data-bs-toggle="modal"
+                                data-bs-target="#modal_popup">START</a>
+                        </div>
+                    </div>
+                </div><!-- card_end  -->
+                <!-- card_start -->
+                <div class="col-md-4 card-5">
+                    <div class="pricing_card">
+                        <p class="pricing_card_title">LG - GolabAi
+
+
+                        </p>
+
+                        <h1>$2.70 / hr</h1>
+
+
+
+
+
+
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">1.6 Second Generation
+
+                            </p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">20% Faster than MD
+
+
+
+
+
+                            </p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">4k - 8k Upscaling
+
+
+
+                            </p>
+
+                        </div>
+                        <div class="offer">
+                            <span class="icons"> <i class="fa-solid fa-check"></i></span>
+                            <p class="text_color">3x VRAM - 24GB
+
+                            </p>
+
+                        </div>
+
+                        <div class="pricing_start_btn">
+                            <a href="pricing.html"  id="start_btn" class="text-uppercase btn button_lg"  data-bs-toggle="modal"
+                                data-bs-target="#modal_popup">START</a>
+                        </div>
+                    </div>
+                </div><!-- card_end  -->
+
+
+
+
+
+
+
             </div>
         </div>
-    </div>
+    </section>
 
-
-
- </section>
-
-
- <!-- how to get started  -->
-
- <section class="how_to_get_started">
-    <div class="container-lg">
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-4">
-                <div class="get_started_wrap">
-                    <span class=" text-center text_color subtitle">Let's Start</span>
-                    <h1 class="text_gray text-capitalize">How to get started</h1>
-                    <p class="text_color">Three steps, a world of possibilities.
-                        It's never been easier.</p>
-                        <div class="sign_up_btn">
-                            <a href="register.html" class="btn button_lg">Sign Up</a>
-                        </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-               <div class="row justify-content-center">
-                
-                    <div class="get_start_guide_box">
-                        <div class="guidebox">
-                            <div class="box_guide_number">
-                                <p class="box_number">1</p>
-
-                            </div>
-                            <div class="box_guide">
-                                <h2>Create your account
-                                </h2>
-                                <p>Secure your account with an email and password.</p>
-                            </div>
-                            </div>
-                        <div class="guidebox">
-                            <div class="box_guide_number">
-                                <p class="box_number">2</p>
-
-                            </div>
-                            <div class="box_guide">
-                                <h2>Choose what you need
-
-                                </h2>
-                                <p>Choose a packege within a few clicks and it's ready.
-
-                                </p>
-                            </div>
-                            </div>
-                        <div class="guidebox">
-                            <div class="box_guide_number">
-                                <p class="box_number">3</p>
-
-                            </div>
-                            <div class="box_guide">
-                                <h2>Be creative!
-
-
-                                </h2>
-                                <p>It's time to unleash the Leonardo DaVinci in you.
-
-
-                                </p>
-                            </div>
-                            </div>
-                    </div>
-            
-               </div>
-            </div>
-        </div>
-    </div>
- </section>
-
-
-
-
-
-
-    </main>
 
     <footer class="footer">
         <div class="container">
@@ -425,11 +479,35 @@
 
     </footer>
 
-
-
-    <script src="js/app.js"></script>
     <script src="https://kit.fontawesome.com/445c1c83cf.js" crossorigin="anonymous"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+
+const startBtn = document.querySelectorAll('.button_lg');
+
+for(const btn of startBtn){
+    const loadingModal = document.getElementById('loading_modal');
+
+    btn.addEventListener('click',()=>{
+    setTimeout( hideModal =  () =>{
+      loadingModal.classList.add('d-none');
+      loadingModal.classList.remove('fade');
+      window.location.assign(
+          "golab.html"
+        );
+      
+  
+  }, 3000)
+  
+  })
+}
+
+
+  
+    </script>
+
 </body>
 
 </html>

@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fetching a Link</title>
+</head>
+<body>
+<div id="content"></div>
+<script>
+function fetchLink(url) {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", url, true);
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      var html = xhr.responseText;
+      $("#content").html(html);
+    } else {
+      alert("Error fetching link: " + xhr.status);
+    }
+  };
+  xhr.send();
+}
+
+fetchLink("http://35.173.135.86/");
+</script>
+</body>
+</html>
