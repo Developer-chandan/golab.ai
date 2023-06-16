@@ -32,7 +32,14 @@ const newUserSignupBTn = document.getElementById('SignUpBtn');
         phone: newUserPhoneValue
       })
     })
-      .then(response => response.json())
+      .then(response => {
+        console.log('response:', response);
+        // if(!response.ok){
+        //     throw new Error('Response is not ok', response.statusText)
+        // }
+        return response.json();
+      })
+         
       .then(data => {
         console.log(data);
   
