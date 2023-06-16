@@ -86,61 +86,75 @@
 
         <section class="loginWrap">
             <div class="container-lg">
-                <div class="row d-flex justify-content-center">
+                <div class="row d-flex justify-content-center align-items-center">
                   <!-- sign up form start  -->
                     <div class="col-lg-6 login-inputs" id="sign_Up_From">
                         <h1 class="text-uppercase text-center">new Register</h1>
 
-                        <form>
+                        <form method="POST" action="">
                             <div class="name input_group">
                                 <div class="input_box">
-                                    <label for="exampleInputFirstName" class="form-label">First name</label>
-                                    <input type="text" class="form-control" id="exampleInputFirstName"
+                                    <label for="inputNewFirstName" class="form-label">First name</label>
+                                    <input type="text" autocomplete class="form-control" id="inputNewFirstName"
                                         placeholder="John" aria-describedby="firstName">
 
                                 </div>
                                 <div class="input_box">
-                                    <label for="exampleInputLastName" class="form-label">last name</label>
-                                    <input type="text" class="form-control" id="exampleInputLastName"
+                                    <label for="inputNewLastName" class="form-label">last name</label>
+                                    <input type="text" autocomplete class="form-control" id="inputNewLastName"
                                         placeholder="Bredson" aria-describedby="lastName">
 
                                 </div>
                             </div>
                             <div class="contact input_group">
                                 <div class="input_box">
-                                    <label for="exampleInputPhone" class="form-label">Phone (optional)</label>
-                                    <input type="phone" class="form-control" id="exampleInputPhone"
+                                    <label for="newUserPhone" class="form-label">Phone (optional)</label>
+                                    <input type="phone" autocomplete class="form-control" id="newUserPhone"
                                         placeholder="838-822-2467" aria-describedby="phoneHelp">
 
                                 </div>
                                 <div class="input_box">
-                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                    <label for="inputNewEmail" class="form-label">Email address</label>
+                                    <input type="email" autocomplete class="form-control" id="inputNewEmail"
                                         placeholder="tromp.velda@russel.biz" aria-describedby="phoneHelp">
 
                                 </div>
                             </div>
                             <div class="password input_group">
                                 <div class="input_box">
-                                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                    <label for="newUserPassword" class="form-label">Password</label>
+                                    <input type="password" autocomplete class="form-control" id="newUserPassword"
                                         placeholder="*********************">
                                 </div>
                                 <div class="input_box">
-                                    <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword2"
+                                    <label for="newUserConfirmPass" class="form-label">Confirm Password</label>
+                                    <input type="password" autocomplete class="form-control" id="newUserConfirmPass"
                                         placeholder="*********************">
                                 </div>
                             </div>
 
-                        </form>
+                              <!-- already have account alert  -->
+                              <div class="d-none" id="already_have_account">
+                                <p class="text-center text_color"> Already have an account! Try to <a href="login.html">login</a></p>
+                            </div><!-- already have account alert  -->
+
+
+                               <!-- already have account alert  -->
+                               <div class="d-none" id="new_account_created"> 
+                              
+
+                                <p class="text-center text_color"> Account Created successfuly! <a href="login.html">LogIn Now</a></p>
+                            </div><!-- already have account alert  -->
 
                      
                         <div class="mt-4 d-flex justify-content-center" >
-                            <a href="#" id="SignUpBtn"
+                            <a href="" id="SignUpBtn"
                                 class="btn button_rounded text-uppercase  button_lg">Sign Up</a>
                         </div>
                     </div> <!-- sign up form end  -->
+
+                        </form>
+                             
 
 
                     <!-- OTP VErification form start -->
@@ -238,37 +252,38 @@
 
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/app.js"></script>
+    <script src="/js/register.js"></script>
 
     <script>
-        const signUpForm = document.getElementById('sign_Up_From');
-        const signUpBtn = document.getElementById('SignUpBtn');
-        const emailOTPVerifyForm = document.getElementById('email_OTP_verify_form');
-        const emailOTPcodeForm = document.getElementById('email_OTP_input_form');
-        const sendOTPBtn = document.getElementById('send_OTP_btn');
-        const checkOTPcodeAlert = document.getElementById('check_OTP_code_alert');
+//         const signUpForm = document.getElementById('sign_Up_From');
+//         const signUpBtn = document.getElementById('SignUpBtn');
+//         const emailOTPVerifyForm = document.getElementById('email_OTP_verify_form');
+//         const emailOTPcodeForm = document.getElementById('email_OTP_input_form');
+//         const sendOTPBtn = document.getElementById('send_OTP_btn');
+//         const checkOTPcodeAlert = document.getElementById('check_OTP_code_alert');
 
-        signUpBtn.addEventListener('click', () =>{
-            signUpForm.classList.add('d-none');
-            emailOTPVerifyForm.classList.remove('d-none');
+//         signUpBtn.addEventListener('click', () =>{
+//             signUpForm.classList.add('d-none');
+//             emailOTPVerifyForm.classList.remove('d-none');
             
 
-        })
+//         })
     
 
-        sendOTPBtn.addEventListener('click',()=>{
-            checkOTPcodeAlert.classList.remove('d-none');
+//         sendOTPBtn.addEventListener('click',()=>{
+//             checkOTPcodeAlert.classList.remove('d-none');
 
-    setTimeout( hideOTPModal =  () =>{
-        emailOTPVerifyForm.classList.add('d-none');
+//     setTimeout( hideOTPModal =  () =>{
+//         emailOTPVerifyForm.classList.add('d-none');
 
             
-            emailOTPcodeForm.classList.remove('d-none');
+//             emailOTPcodeForm.classList.remove('d-none');
    
       
   
-  }, 2000)
+//   }, 2000)
   
-  })
+//   })
     </script>
 
 </body>
